@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width:19){}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+}
+
+.navbox {
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  z-index: 100;
+}
+
+.container {
+  width: 80vw;
+}
+
+nav img {
+  width: 68px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row {
+  width: 100%;
+  margin: 40px 40px;
+}
+
+.row .col-l {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 61.8%;
+}
+
+.row .col-s {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 38.2%;
+}
+
+.btn-primary {
+  background-color: tan;
+  border-bottom-color: sienna;
+  border-color: tan;
+}
+
+.footer {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 960px) {
+  .vh-sm-100 {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 960px) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .col-l {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .col-s {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
