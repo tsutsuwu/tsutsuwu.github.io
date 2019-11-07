@@ -1,0 +1,941 @@
+*{box-sizing: border-box;
+
+}
+body{
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+#container{
+    width:100%;    
+    margin:0;               
+}
+
+.fontitle{
+    color:rgba(34, 46, 14, 0.658);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-align:center;
+    text-justify: distribute-all-lines;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif , sans-serif;
+}
+.fontitleE{
+    color:rgba(34, 46, 14, 0.658);
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    text-align:center;
+    line-height: 2;
+    text-justify: distribute-all-lines;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif , sans-serif;
+}
+
+
+/* nav */
+nav{
+    width: 100%;
+    margin:0 auto;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+nav .container{
+    width: 88%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container .logo .img{
+    width: 50px;
+    display: flex;
+    margin-left: 20px;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style-type: none;  
+}
+nav .menu .link{
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    transition: 0.4s;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif , sans-serif;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+nav .menu .link:hover{
+    background-color:black;
+    color:rgb(78, 150, 20);
+    font-weight: 600;
+}
+nav .mobile_button{
+    display: none;
+}
+
+
+@media (max-width:991px){
+
+    nav .container{
+        max-width: 990px;
+        padding: 20px 0 20px 0;
+    }
+    nav .container .logo .img{
+        width: 50px;
+    }
+    nav .menu{
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        text-align: center;
+        padding: unset;
+    }
+    nav .menu li{
+        width: 100vw;
+    }
+    nav #link_all{
+        display: none;
+    } 
+    nav #link_all.active{ 
+        display: block;
+    }
+    nav .menu .link{
+        font-size: 14px;
+    }
+    nav .mobile_button{
+        display: block;
+        background-color:black;
+        border:1px solid white;
+        /* margin-right: 50px; */
+        padding: 17px 20px;
+        border-radius: 5px;
+    }
+    nav .mobile_button .bars{
+       font-size: 24px;
+        color: white;
+    }
+    nav .menu .link:hover{
+        font-size: 24px;
+        padding: 40px;
+    }
+}
+    
+
+/* banner */
+#banner{
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url('..../img-tweb/index/nepal-cover.jpg');
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 55vh;         
+}
+.font1{
+    color: #fff;
+    padding: 12px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#smallborder{
+    width: 500px;
+    height: 50px;
+    margin:0 auto;
+    background-color:rgba(0, 22, 0, 0.3);    
+}
+@media (max-width:991px){
+    #smallborder{
+        width: 250px;
+        height: unset;
+    }
+}
+
+#content{
+    max-width: 1140px;
+    margin:0 auto;
+    background-color:white;    
+    
+}
+@media (min-width:1024px) {
+   #content{
+       width:85%;
+   }
+}
+
+@media (max-width:991px) {
+    #content{
+       flex-direction: column;
+       width: 85%;
+    }   
+}
+
+.contenttitle{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlecenter{
+    width:35%;
+    height: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+@media (max-width:991px) {
+    .titlecenter{
+       width: 100%;
+       margin-bottom:15%;
+    } 
+}
+#contentA{
+    width:100%;
+    height:400px;
+    background-color:white;
+    padding:50px 0px 50px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:1024px) {
+    #contentA{
+       height: auto;
+    }   
+}
+@media (max-width:991px) {
+     #contentA{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+     }   
+}
+#contentA1{
+    width: 46%;
+    background-image: url('../img-tweb/index/buddha.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block; 
+    float:left;
+    background-position-y:60%;
+    border-radius: 6px 6px 32px 6px; 
+}
+@media (max-width:991px) {
+    #contentA1{
+        background-position-x: 55%;
+        background-position-y: 87%;
+        width:100%;
+       height: 400px;
+       border-radius: 6px 32px 0px 0px; 
+    }   
+}
+#contentA2{
+    width: 46%;
+    height:100%;
+    background-color:black;
+    padding:20px 40px 20px 40px;   
+    border-radius: 32px 6px 6px 6px; 
+}
+@media (max-width:991px) {
+    #contentA2{
+       width:100%;       
+    border-radius: 0px 0px 6px 32px; 
+    }   
+}
+.A1{
+    width: 100%;
+    height:300px;
+    position: center;
+}
+.fontA{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    text-align:left;
+    line-height: 2;
+    text-justify: distribute-all-lines;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif , sans-serif;
+}
+#contentB{
+    width:100%;
+    height:400px;
+    background-image: url('../img-tweb/index/nepali.jpg');    
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 32px 6px 0px 0px; 
+    border:white 0.05px solid;
+}
+#contentB h2{
+    color:white;
+}
+#contentC{
+    width:100%;
+    height:300px;
+    background-image: url('../img-tweb/index/map.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0, 0.2);
+    padding:0px 0px 0px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 32px 6px; 
+    border:white 0.05px solid;
+    
+}
+@media (max-width:991px) {
+    #contentC{
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       height: unset;
+       
+    }   
+}
+#contentC1{
+    width: 46%;
+    height:100%;
+    background-color:rgba(42, 37, 83, 0.65);
+    opacity: .9;        
+    padding:40px 40px 10px 40px; 
+}
+@media (max-width:991px) {
+    #contentC1{
+       width: 80%;
+       margin-top: 10%;
+       margin-bottom: 10%;
+    }   
+}
+#contentC2{
+    width: 46%;
+    height:100%;
+    background-color:rgba(89, 124, 139, 0.65);
+    opacity: .8;
+    padding: 40px 40px 10px 40px;   
+}
+@media (max-width:991px) {
+    #contentC2{
+       width: 80%;
+       margin-bottom: 10%;
+    }   
+}
+#contentC3{
+    width: 46%;
+    height:100%;
+    background-color:rgba(37, 76, 83, 0.65);
+    opacity: .9;        
+    padding:40px 40px 10px 40px; 
+    border-radius: 0px 0px 32px 6px; 
+}
+@media (max-width:991px) {
+    #contentC3{
+       width: 80%;
+       margin-bottom: 10%;
+    }   
+}
+#contentD{
+    width:100%;
+    background-color:white;
+    padding:50px 0px 50px 0px;
+    box-sizing: border-box;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;         
+}
+@media (max-width:991px) {
+    #contentD{
+       flex-direction: column;
+       align-items: center;
+       width: 100%;      
+    }   
+}
+.fontD{
+    color:white;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    text-align:left;
+    line-height:1.8;
+    text-justify: distribute-all-lines;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif , sans-serif;
+}
+#contentD1{
+    width: calc(100%/3 - 15px);
+    height:100%;
+    background-color:white;
+}
+@media (max-width:991px) {
+    #contentD1{
+       width: 100%;
+       margin-bottom: 10%;
+    }   
+}
+#contentD1-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/birth-tree-of-buddha.jpg');            
+    background-size: cover;
+    background-position-x:25%;
+    background-position-y:50%;
+    background-repeat: no-repeat;
+    float:left; 
+    padding: 10px;     
+    border-radius: 32px 6px 0px 0px;  
+}
+@media (max-width:991px) {
+    #contentD1-1{
+       width: 100%;
+       height: 50vh;
+    }   
+}
+#contentD1-2{
+    width: 100%;    
+    background-color:#373C38;
+    float:left;            
+    padding:20px 20px 20px 20px;     
+    border-radius: 0px 0px 32px 6px;
+}
+@media (max-width:991px) {
+    #contentD1-2{
+       width: 100%;
+       height: auto;
+    }   
+}
+#contentD2{
+    width: calc(100%/3 - 15px);
+    height:100%;
+    background-color:white;
+    /* margin-top:50px; */
+}  
+@media (max-width:991px) {
+    #contentD2{
+       width: 100%;
+       margin-bottom: 10%;
+       margin-top:0px;
+    }   
+}
+#contentD2-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/EBCABC.jpg');            
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    float:left;            
+    padding: 10px;   
+    border-radius: 32px 6px 0px 0px;
+}
+@media (max-width:991px) {
+    #contentD2-1{
+       width: 100%;
+       height: 50vh;
+    }   
+}
+#contentD2-2{
+    width: 100%;
+    background-color:#373C38;
+    float:left;            
+    padding:20px 20px 20px 20px; 
+    border-radius: 0px 0px 32px 6px;
+}
+@media (max-width:991px) {
+    #contentD2-2{
+       width: 100%;
+    }   
+}  
+#contentD3{
+    width: calc(100%/3 - 15px);
+    height:100%;
+    background-color:white;
+    float:right;
+}    
+@media (max-width:991px) {
+    #contentD3{
+       width: 100%;
+       margin-bottom: 10%;
+    }   
+}
+#contentD3-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/festival.jpg');            
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    float:left;            
+    padding: 10px;   
+    border-radius: 32px 6px 0px 0px;
+}
+@media (max-width:991px) {
+    #contentD3-1{
+       width: 100%;
+       height: 50vh;
+    }   
+}
+#contentD3-2{
+    width: 100%;
+    background-color:#373C38;
+    float:left;            
+    padding:20px 20px 20px 20px; 
+    border-radius: 0px 0px 32px 6px; 
+}
+@media (max-width:991px) {
+    #contentD3-2{
+       width: 100%;
+    }   
+}
+
+#contentDD{
+    width:100%;
+    background-color:white;
+    margin-top:-30px;
+    padding:0px 0px 50px 0px;
+    box-sizing: border-box;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;         
+}
+@media (max-width:991px) {
+    #contentDD{
+       flex-direction: column;
+       align-items: center;
+       width: 100%;      
+       margin-top:10%
+    }   
+}
+
+#contentDD1{
+    width: calc(100%/3 - 15px);
+    height:100%;
+    background-color:white;
+}
+@media (max-width:991px) {
+    #contentDD1{
+       width: 100%;
+       margin-bottom: 10%;
+    }   
+}
+#contentDD1-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/Nepalirice.jpg');            
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    padding: 10px;   
+    border-radius: 32px 6px 0px 0px;
+}
+@media (max-width:991px) {
+    #contentDD1-1{
+       width: 100%;
+       height: 50vh;
+    }   
+}
+#contentDD1-2{
+    width: 100%;
+    background-color:#AB3B3A;
+    height:100%;
+    float:left;            
+    padding:20px 20px 20px 20px; 
+    border-radius: 0px 0px 32px 6px;
+}
+@media (max-width:991px) {
+    #contentDD1-2{
+       width: 100%;
+    }   
+}  
+#contentDD2{
+    width: calc(100%/3 - 30px);
+    height:100%;
+    background-color:white;
+    margin-top:50px;
+}  
+@media (max-width:991px) {
+    #contentDD2{
+       width: 100%;
+       margin-bottom: 10%;
+       margin-top:0px;
+    }   
+}
+#contentDD2-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/momo.jpg');            
+    background-size: cover;
+    background-position-x:35% ;
+    background-repeat: no-repeat;
+    padding: 10px;     
+    border-radius: 32px 6px 0px 0px; 
+    
+}
+@media (max-width:991px) {
+    #contentDD2-1{
+       width: 100%;
+       height: 50vh;
+    }   
+}
+#contentDD2-2{
+    width: 100%;
+    background-color:#AB3B3A;
+    float:left;            
+    padding:20px 20px 20px 20px; 
+    border-radius: 0px 0px 32px 6px;
+}
+@media (max-width:991px) {
+    #contentDD2-2{
+       width: 100%;
+    }   
+}  
+#contentDD3{
+    width: calc(100%/3 - 15px);
+    height:100%;
+    background-color:white;
+    float:right;
+}    
+@media (max-width:991px) {
+    #contentDD3{
+       width: 100%;
+       margin-bottom: 10%;
+    }   
+}
+#contentDD3-1{
+    width: 100%;
+    height:400px;
+    background-color:white;
+    background-image: url('../img-tweb/index/Samosa.jpg');             
+    background-size: cover;
+    background-position-x:60%;
+    background-repeat: no-repeat;
+    float:left;            
+    padding: 10px;   
+    border-radius: 32px 6px 0px 0px;
+}
+@media (max-width:991px) {
+    #contentDD3-1{
+       width: 100%;
+       height: 50vh;
+       background-position-y: 60%;
+    }   
+}
+#contentDD3-2{
+    width: 100%;
+    background-color:#AB3B3A;
+    float:left;            
+    padding:20px 20px 20px 20px; 
+    border-radius: 0px 0px 32px 6px; 
+}
+@media (max-width:991px) {
+    #contentDD3-2{
+       width: 100%;      
+    }   
+}
+
+
+
+
+#contentE{  
+    width:100%;
+    height:420px;
+    background-color:white;        
+    padding:50px 0px 30px 0px;
+    box-sizing: border-box;     
+    display: flex;   
+    justify-content: space-between;    
+}
+@media (max-width:991px) {
+    #contentE{
+       flex-direction: column;
+       height: unset;
+    }   
+} 
+#contentE1{
+    width: 52%;
+    background-color:#AB3B3A;   
+    padding:40px 40px 40px 40px;  
+    border-radius: 6px 32px 6px 6px;   
+}
+@media (max-width:991px) {
+    #contentE1{
+       width: 100%;
+       border-radius: 6px 32px 0px 0px; 
+    }   
+}  
+#contentE2{
+    width: 45%;
+    height:100%;
+    background-image: url(/..img-tweb/index/Kumari.jpg);
+    background-size: cover;
+    background-position-x: 48%;
+    padding: 10px; 
+    border-radius: 5px 10px 15px 30px;
+    border-radius: 6px 6px 6px 32px;     
+    /* 左上 右上 右下 左下(順時鐘) */
+}
+@media (max-width:991px) {
+    #contentE2{
+       width: 100%;
+       height: 400px;
+       border-radius: 0px 0px 6px 32px; 
+    }   
+}
+
+#contentF{  
+    width:100%;
+    height:400px;
+    background-color:white;        
+    padding:50px 0px 30px 0px;
+    box-sizing: border-box;     
+    display: flex;   
+    justify-content: space-between;    
+}
+@media (max-width:991px) {
+    #contentF{
+       flex-direction: column;
+       height: unset;
+    }   
+} 
+#contentF1{
+    width: 52%;
+    height:100%;
+    background-image: url(/..img-tweb/index/Tika.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+    background-position-x: 80%;
+    padding: 10px; 
+    border-radius: 6px 32px 6px 6px;    
+       
+}
+@media (max-width:991px) {
+    #contentF1{
+       width: 100%;
+       height: 400px;
+       background-position-x: 65%;
+       border-radius: 6px 32px 0px 0px;  
+    }   
+}  
+#contentF2{
+    width: 45%;
+    background-color:#AB3B3A;  
+    padding:40px 40px 40px 40px;  
+    border-radius: 6px 6px 6px 32px;
+}
+@media (max-width:991px) {
+    #contentF2{
+       width: 100%;
+       border-radius: 0px 0px 6px 32px;
+    }   
+}
+
+
+#contentG{  
+    width:100%;
+    height:400px;
+    background-color:white;        
+    padding:50px 0px 30px 0px;
+    box-sizing: border-box;     
+    display: flex;   
+    justify-content: space-between; 
+    margin-bottom: 50px;   
+}
+@media (max-width:991px) {
+    #contentG{
+       flex-direction: column;
+       height: auto;
+    }   
+} 
+#contentG1{
+    width: 52%;
+    background-color:#AB3B3A;  
+    padding:40px 40px 40px 40px;  
+    border-radius: 6px 32px 6px 6px;   
+}
+@media (max-width:991px) {
+    #contentG1{
+       width: 100%;
+       height: auto;
+       border-radius: 6px 32px 0px 0px; 
+    }   
+}  
+#contentG2{
+    width: 45%;
+    height:100%;
+    background-image: url(/..img-tweb/index/flags.jpg);
+    background-size: cover;
+    background-position-y: 60%;
+    padding: 10px; 
+    border-radius: 5px 10px 15px 30px;
+    border-radius: 6px 6px 6px 32px;     
+    /* 左上 右上 右下 左下(順時鐘) */
+}
+@media (max-width:991px) {
+    #contentG2{
+       width: 100%;
+       height: 400px;
+       background-position-x: 55%;
+       border-radius: 0px 0px 6px 32px; 
+    }   
+}
+
+#contentH{  
+    width:100%;
+    height:500px;
+    background-color:white;        
+    padding:50px 0px 50px 0px;
+    box-sizing: border-box;     
+    display: flex;   
+    justify-content: space-between;    
+}
+@media (max-width:991px) {
+    #contentH{
+       flex-direction: column;
+       height: 1000px;
+    }   
+} 
+#contentH1{
+    width: 46%;
+    height:100%;
+    background-image: url(/..img-tweb/Kathmando/handmadepapercalenders.jpg);
+    background-size: cover;
+    background-position-y: 60%;
+    padding: 10px; 
+    border-radius: 6px 32px 6px 6px;    
+       
+}
+@media (max-width:991px) {
+    #contentH1{
+       width: 100%;
+       height:400px;
+       border-radius: 6px 32px 0px 0px;  
+    }   
+}  
+#contentH2{
+    width: 46%;
+    background-color:#AB3B3A;   
+    padding:10px 40px 10px 40px;  
+    border-radius: 6px 6px 6px 32px;
+}
+@media (max-width:991px) {
+    #contentH2{
+       width: 100%;
+       height: auto;
+       border-radius: 0px 0px 6px 32px;
+    }   
+}
+
+
+
+
+/* footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.footer_nav {
+    padding: 30px 0;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:991px) {
+    .footer_nav{
+     flex-direction: column;
+    }
+}
+footer ul.footer_links_group {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style-type: none;   
+    color: #fff;
+}
+@media (max-width:991px) {
+    footer ul.footer_links_group{
+     flex-direction: column;
+     align-items: flex-start;
+    }
+}
+
+
+footer ul.footer_links_group>li>a {
+    font-weight: bold;
+}
+
+
+footer ul.footer_second_links_group {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+footer ul.footer_second_links_group li {
+    margin-bottom: 10px;
+}
+
+.copyright {   
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    width: 100%;
+    background-color: rgb(0, 0, 0); 
+    text-align: center;
+}
+@media (max-width:991px) {
+    .copyright{
+    padding: 22%;
+    }
+}
+
+footer .footer_links_group.copyright .fontD{
+    text-align: unset;
+}
+
+footer .column{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;      
+}
+@media (max-width:991px) {
+    footer .column{
+    align-items: flex-start;
+    text-align: center;
+    }
+}
+
+.padding50{
+    padding:50px 50px 50px 50px;
+}
+
+
+    
