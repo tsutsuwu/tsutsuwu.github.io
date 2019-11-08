@@ -131,7 +131,7 @@ nav .mobile_button{
     width:100%;
     height: 100vh;
     margin: 0 auto;
-    background-image: url('../img-Kathmando/K_cover.jpg');
+    background-image: url('./img-Kathmando/K_cover.jpg');
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ nav .mobile_button{
 }
 #contentA1{
     width: 46%;
-    background-image: url('../img-Kathmando/K_A2.jpg');
+    background-image: url('./img-Kathmando/K_A2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: block; 
@@ -270,7 +270,7 @@ nav .mobile_button{
 #contentB{
     width:100%;
     height:400px;
-    background-image: url('../img-Kathmando/K_people.jpg');    
+    background-image: url('./img-Kathmando/K_people.jpg');    
     background-size: cover;
     background-position:bottom;
     background-repeat: no-repeat;
@@ -287,7 +287,7 @@ nav .mobile_button{
 #contentC{
     width:100%;
     height:400px;
-    background-image: url('../img-Kathmando/K_flag.jpg');
+    background-image: url('./img-Kathmando/K_flag.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -374,7 +374,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/Bhaktapur.jpg');            
+    background-image: url('./img-Kathmando/Bhaktapur.jpg');            
     background-size: cover;
     background-position-x:25%;
     background-position-y:50%;
@@ -419,7 +419,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/Patan.jpg');            
+    background-image: url('./img-Kathmando/Patan.jpg');            
     background-size: cover;
     background-position:left;
     background-repeat: no-repeat;
@@ -461,7 +461,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/Durbarsquare.jpg');            
+    background-image: url('./img-Kathmando/Durbarsquare.jpg');            
     background-size: cover;
     /* background-position:center; */
     background-repeat: no-repeat;
@@ -521,7 +521,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/pashupatinath.jpg');            
+    background-image: url('./img-Kathmando/pashupatinath.jpg');            
     background-size: cover;
     background-position:top;
     background-repeat: no-repeat;
@@ -564,7 +564,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/Boudhanath\ Stupa.jpg');            
+    background-image: url('./img-Kathmando/Boudhanath\ Stupa.jpg');            
     background-size: cover;
     background-position-x:60% ;
     background-repeat: no-repeat;
@@ -606,7 +606,7 @@ nav .mobile_button{
     width: 100%;
     height:400px;
     background-color:white;
-    background-image: url('../img-Kathmando/monkeystupa.jpg');             
+    background-image: url('./img-Kathmando/monkeystupa.jpg');             
     background-size: cover;
     background-position-x:60%;
     background-repeat: no-repeat;
@@ -667,7 +667,7 @@ nav .mobile_button{
 #contentE2{
     width: 46%;
     height:100%;
-    background-image: url('../img-Kathmando/Thangka.jpg');
+    background-image: url('./img-Kathmando/Thangka.jpg');
     background-size: cover;
     background-position-x: 48%;
     padding: 10px; 
@@ -701,7 +701,7 @@ nav .mobile_button{
 #contentF1{
     width: 46%;
     height:100%;
-    background-image: url('../img-Kathmando/masalatea.jpg');
+    background-image: url('./img-Kathmando/masalatea.jpg');
     background-size: 130% cover;
     background-position-y: 40%;
     background-position-x: 80%;
@@ -763,7 +763,7 @@ nav .mobile_button{
 #contentG2{
     width: 46%;
     height:100%;
-    background-image: url('../img-Kathmando/Cashmere2.jpg');
+    background-image: url('./img-Kathmando/Cashmere2.jpg');
     background-size: cover;
     background-position-y: 60%;
     padding: 10px; 
@@ -798,7 +798,7 @@ nav .mobile_button{
 #contentH1{
     width: 46%;
     height:100%;
-    background-image: url('../img-Kathmando/handmadepapercalenders.jpg');
+    background-image: url('./img-Kathmando/handmadepapercalenders.jpg');
     background-size: cover;
     background-position-y: 60%;
     padding: 10px; 
