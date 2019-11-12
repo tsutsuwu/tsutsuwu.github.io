@@ -1,7 +1,7 @@
 #return-to-top {
     position: fixed;
     bottom: 20px;
-    left: 10%;
+    left: calc(50% - 25px);
     background:  rgba(65, 65, 65);
     background: rgba(65, 65, 65, 0.7);
     width: 50px;
